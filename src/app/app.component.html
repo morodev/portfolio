@@ -1,0 +1,33 @@
+<div fxLayout="column">
+  <div fxLayout="row" fxFlex="300px" class="content" fxLayoutAlign="center center">
+      <img src="{{pathImage}}"  class="container-circular-photo">
+  </div>
+  <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+      <div class="padding-152" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="80px">
+        <div class="title">{{titleHover}}</div>
+        <div class="sub-title">{{subTitleHover}}</div>
+      </div>
+      <div class="navigate-portfolio padding-152" fxLayout="row" fxFlex fxLayoutGap="100px">
+
+        <div class="position-hover" (mouseover)="setPortfolioData('face')" >
+          <mat-icon>face</mat-icon>
+        </div>
+        <div class="position-hover" (mouseover)="setPortfolioData('mail_outline')">
+          <mat-icon>mail_outline</mat-icon>
+        </div>
+        <div class="position-hover" (mouseover)="setPortfolioData('event_note')">
+          <mat-icon>event_note</mat-icon>
+        </div>
+        <div class="position-hover" (mouseover)="setPortfolioData('map')">
+          <mat-icon>map</mat-icon>
+        </div>
+        <div class="position-hover" (mouseover)="setPortfolioData('call')">
+          <mat-icon>call</mat-icon>
+        </div>
+        <div class="position-hover" (mouseover)="setPortfolioData('lock')">
+          <mat-icon>lock</mat-icon>
+        </div>
+      </div>
+  </div>
+</div>
+
